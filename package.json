@@ -2,7 +2,12 @@
   "name": "toggle-test-only",
   "displayName": "Toggle .only Test",
   "description": "Disable other .only's, and toggle current test .only.",
-  "version": "0.0.1",
+  "publisher": "omercohen",
+  "repository": {
+    "url": "https://github.com/omercohen990/toggle-test-only"
+  },
+  "version": "1.0.0",
+  "icon": "icon.png",
   "engines": {
     "vscode": "^1.81.0"
   },
@@ -15,8 +20,9 @@
   "contributes": {
     "commands": [
       {
+        "category": "Toggle Test Only",
         "command": "extension.toggleTestOnly",
-        "title": "toggle-test-only: Toggle Test"
+        "title": "Toggle"
       }
     ],
     "configuration": {

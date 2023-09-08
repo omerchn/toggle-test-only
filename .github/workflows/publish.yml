@@ -1,0 +1,27 @@
+on:
+  push:
+    branches:
+      - main
+
+name: Publish Extension
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup node js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+
+      - name: Install vsce
+        run: npm install -g @vscode/vsce
+
+      - name: install dependencies
+        run: npm install
+
+      - name: Publish
+        run: vsce publish patch -p $VSCE_TOKEN
+        env:
+          VSCE_TOKEN: ${{ secrets.VSCE_TOKEN }}

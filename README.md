@@ -47,6 +47,10 @@ This extension provides a few configuration options to customize its behavior. Y
 
 - **`toggleTestOnly.testIdentifiers`**: Customize the test block identifiers (e.g., change them to match your framework's syntax if needed). The default identifiers are ['it', 'test', 'describe'].
 
+## License
+
+This extension is licensed under the [MIT License](LICENSE).
+
 ## Feedback and Contributions
 
 We welcome your feedback and contributions! If you encounter any issues, have suggestions, or want to contribute to the development of this extension, please visit the [GitHub repository](https://github.com/omercohen990/toggle-test-only) and create an issue or pull request.
