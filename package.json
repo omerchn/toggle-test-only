@@ -1,0 +1,64 @@
+{
+  "name": "toggle-test-only",
+  "displayName": "Toggle .only Test",
+  "description": "Disable other .only's, and toggle current test .only.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.81.0"
+  },
+  "categories": [
+    "Testing",
+    "Keymaps",
+    "Snippets"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.toggleTestOnly",
+        "title": "toggle-test-only: Toggle Test"
+      }
+    ],
+    "configuration": {
+      "title": "Toggle Test Only",
+      "properties": {
+        "toggleTestOnly.focusModifier": {
+          "description": "the modifier used to focus tests (eg. '.only')",
+          "type": "string",
+          "default": ".only"
+        },
+        "toggleTestOnly.testIdentifiers": {
+          "description": "the test block identifiers (eg. it, test, describe)",
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": [
+            "it",
+            "test",
+            "describe"
+          ]
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.81.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
+    "@typescript-eslint/parser": "^6.4.1",
+    "eslint": "^8.47.0",
+    "glob": "^10.3.3",
+    "mocha": "^10.2.0",
+    "typescript": "^5.1.6",
+    "@vscode/test-electron": "^2.3.4"
+  }
+}
