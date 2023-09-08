@@ -1,6 +1,6 @@
 {
   "name": "toggle-test-only",
-  "displayName": "Toggle .only Test",
+  "displayName": "Toggle Test .only",
   "description": "Disable other .only's, and toggle current test .only.",
   "publisher": "omercohen",
   "repository": {
