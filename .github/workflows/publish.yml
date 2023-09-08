@@ -21,6 +21,11 @@ jobs:
       - name: install dependencies
         run: npm install
 
+      - name: Set git identity
+        run: |
+          git config --global user.email "omercohen990@gmail.com"
+          git config --global user.name "Omer Cohen"
+
       - name: Publish
         run: vsce publish patch -p $VSCE_TOKEN
         env:
