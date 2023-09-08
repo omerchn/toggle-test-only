@@ -32,4 +32,4 @@ jobs:
           VSCE_TOKEN: ${{ secrets.VSCE_TOKEN }}
 
       - name: Push changes
-        run: git push https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+        run: git push
