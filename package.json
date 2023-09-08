@@ -6,7 +6,7 @@
   "repository": {
     "url": "https://github.com/omercohen990/toggle-test-only"
   },
-  "version": "1.0.2",
+  "version": "1.0.3",
   "icon": "icon.png",
   "engines": {
     "vscode": "^1.81.0"
