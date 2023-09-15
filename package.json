@@ -20,9 +20,9 @@
   "contributes": {
     "commands": [
       {
-        "category": "Toggle Test Only",
+        "category": "Toggle Test .only",
         "command": "extension.toggleTestOnly",
-        "title": "Toggle"
+        "title": "Toggle Only"
       }
     ],
     "configuration": {

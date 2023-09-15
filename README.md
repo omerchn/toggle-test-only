@@ -29,12 +29,12 @@ The **VS Code Toggle Test .only Extension** is a powerful tool for developers wh
    - **Command Palette:**
 
      - Open the command palette by pressing `Ctrl+Shift+P`.
-     - Type "Toggle Test .only" and select the command.
+     - Type "Toggle Only" and select the command.
 
    - **Keyboard Shortcut:**
      - Assign a custom keyboard shortcut to the "Toggle Test .only" command for quick access. To do this:
        - Open the Keyboard Shortcuts settings by pressing `Ctrl+K Ctrl+S`.
-       - Search for "Toggle Test .only" in the search bar.
+       - Search for "Toggle Only" in the search bar.
        - Right-click on the command and choose "Add Keybinding" to set your preferred shortcut.
 
 4. The extension will toggle the `.only` modifier on the current test block, disabling all other test blocks that have `.only`, ensuring only one test is focused at a time. This allows you to run focused tests or revert to running all tests.
