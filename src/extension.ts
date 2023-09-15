@@ -22,7 +22,7 @@ export function activate(context: vscode.ExtensionContext) {
         let currentIdentifierLine: number | undefined = undefined
 
         // loop lines above cursor to find line to find current identifier line, toggle `only`
-        for (let i = editor.selection.active.line; i > 0; i--) {
+        for (let i = editor.selection.active.line; i >= 0; i--) {
           const { text, range, lineNumber } = editor.document.lineAt(i)
           if (
             isIdentifierLine({
