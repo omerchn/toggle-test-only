@@ -4,7 +4,7 @@
   "description": "Disable other .only's, and toggle current test .only.",
   "publisher": "omercohen",
   "repository": {
-    "url": "https://github.com/omercohen990/toggle-test-only"
+    "url": "https://github.com/omerchn/toggle-test-only"
   },
   "version": "1.0.8",
   "icon": "icon.png",
